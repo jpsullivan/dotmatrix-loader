@@ -1,11 +1,54 @@
 <div class="container mx-auto h-dvh">
-  <div
-    class="-mx-px mt-[6px] h-5 w-[calc(100%+2px)] opacity-90 mix-blend-color-burn"
-  >
-    <app-matrixloader />
+  <div class="flex flex-col gap-2 pt-10">
+    <h3 class="p-0 m-0">Default</h3>
+    <div class="h-5">
+      <app-matrixloader />
+    </div>
   </div>
 
-  <div class="mt-10 p-6 border shadow-lg bg-slate-700 rounded-lg">
-    <app-matrixloader />
+  <div class="flex flex-col gap-2 mt-10">
+    <h3 class="p-0 m-0">With container and BG color</h3>
+    <div class="p-6 border shadow-lg bg-slate-700 rounded-lg">
+      <app-matrixloader />
+    </div>
   </div>
+
+  <div class="flex flex-col gap-2 mt-10">
+    <h3 class="p-0 m-0">Alphanumeric "matrix" loader</h3>
+    <div class="h-20">
+      <app-letter-loader class="h-full w-full" />
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-2 mt-10">
+    <h3 class="p-0 m-0">Alphanumeric "matrix" loader with gradient mask</h3>
+    <div class="h-20">
+      <app-letter-loader
+        class="h-full w-full [mask-image:linear-gradient(180deg,#000_0%,#00000000_60.82%)]"
+      />
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-2 mt-10">
+    <h3 class="p-0 m-0">Usage with chatgpt style ui</h3>
+    <div class="h-20">
+      <div class="w-full h-full border rounded-lg shadow p-4">
+        <app-mock-chat />
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-2 mt-20">
+    <h3 class="p-0 m-0">
+      Usage with container, BG color and chat-gpt style ui
+    </h3>
+    <div class="p-6 h-auto border shadow-lg bg-slate-700 rounded-lg">
+      <div class="relative w-full">
+        <app-mock-chat class="absolute text-slate-100" />
+      </div>
+      <app-matrixloader />
+    </div>
+  </div>
+
+  <div class="h-96"></div>
 </div>
