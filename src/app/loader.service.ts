@@ -6,7 +6,7 @@ import { BehaviorSubject, Subscription, switchMap, timer } from 'rxjs';
 })
 export class LoaderService {
   private updateRate$ = new BehaviorSubject<number>(0.1);
-  private refreshRate$ = new BehaviorSubject<number>(150);
+  private refreshRate$ = new BehaviorSubject<number>(100);
   private running$ = new BehaviorSubject<boolean>(false);
   private subscription: Subscription | null = null;
 

@@ -8,7 +8,17 @@
 
   <div class="flex flex-col gap-2 mt-10">
     <h3 class="p-0 m-0">With container and BG color</h3>
-    <div class="p-6 border shadow-lg bg-slate-700 rounded-lg">
+    <div class="p-6 border rounded-lg shadow-lg bg-slate-700">
+      <app-matrixloader />
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-2 mt-10"></div>
+  <h3 class="p-0 m-0">With container, BG color and no padding</h3>
+  <div class="max-w-2xl mx-auto">
+    <div
+      class="h-64 overflow-hidden rounded-lg shadow-md shadow-slate-700/10 border-slate-700/20 bg-slate-700"
+    >
       <app-matrixloader />
     </div>
   </div>
@@ -16,7 +26,7 @@
   <div class="flex flex-col gap-2 mt-10">
     <h3 class="p-0 m-0">Alphanumeric "matrix" loader</h3>
     <div class="h-20">
-      <app-letter-loader class="h-full w-full" />
+      <app-letter-loader class="w-full h-full" />
     </div>
   </div>
 
@@ -32,7 +42,7 @@
   <div class="flex flex-col gap-2 mt-10">
     <h3 class="p-0 m-0">Usage with chatgpt style ui</h3>
     <div class="h-20">
-      <div class="w-full h-full border rounded-lg shadow p-4">
+      <div class="w-full h-full p-4 border rounded-lg shadow">
         <app-mock-chat />
       </div>
     </div>
@@ -42,9 +52,33 @@
     <h3 class="p-0 m-0">
       Usage with container, BG color and chat-gpt style ui
     </h3>
-    <div class="p-6 h-auto border shadow-lg bg-slate-700 rounded-lg">
+    <div class="h-auto p-6 border rounded-lg shadow-lg bg-slate-700">
       <div class="relative w-full">
         <app-mock-chat class="absolute text-slate-100" />
+      </div>
+      <app-matrixloader />
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-2 mt-20">
+    <h3 class="p-0 m-0">
+      Usage with container, BG color and chat-gpt style ui
+    </h3>
+    <div class="h-auto p-6 border rounded-lg shadow-lg bg-slate-700">
+      <div class="relative w-full">
+        <div class="absolute w-full">
+          <div class="grid min-h-full place-items-center">
+            <div
+              class="p-8 text-center border rounded-lg backdrop-blur-xl bg-slate-500/10 opacity-80 border-slate-300/10"
+            >
+              <h1
+                class="text-xl break-all font-mono uppercase leading-3 tracking-[1.2px] text-slate-400"
+              >
+                Processing
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
       <app-matrixloader />
     </div>
