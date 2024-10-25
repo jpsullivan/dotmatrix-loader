@@ -84,5 +84,64 @@
     </div>
   </div>
 
+  <div class="flex flex-col gap-2 mt-10">
+    <h3 class="p-0 m-0">Dots hover</h3>
+    <div class="max-w-2xl mx-auto">
+      <div
+        class="h-[450px] w-[450px] overflow-hidden border rounded-lg shadow-lg shadow-slate-400/70 border-slate-400/70 bg-slate-700"
+      >
+        <app-dots-hover-group>
+          <app-dots-hover-block href="/example1" [colors]="[[62, 207, 142]]">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-950 to-[84%]"
+            ></div>
+            <div
+              class="absolute inset-0"
+              style="
+                background: radial-gradient(
+                  57.49% 50% at 50% 50%,
+                  rgba(19, 19, 22, 0.8) 34.41%,
+                  rgba(19, 19, 22, 0) 100%
+                );
+              "
+            ></div>
+            <div class="relative flex flex-col items-center w-full">
+              <div
+                class="relative aspect-[104/42] w-[calc(104/16*1rem)] max-w-full translate-y-4 transition-transform duration-300 group-hover:translate-y-0 group-focus:translate-y-0 no-hover:translate-y-0"
+              >
+                <img
+                  alt=""
+                  loading="lazy"
+                  width="104"
+                  height="42"
+                  decoding="async"
+                  data-nimg="1"
+                  class="absolute inset-0 w-full h-full transition-opacity duration-500 group-hover:opacity-0 group-focus:opacity-0"
+                  src="https://clerk.com/_next/static/media/supabase.869a45fb.svg"
+                  style="color: transparent"
+                /><img
+                  alt=""
+                  loading="lazy"
+                  width="104"
+                  height="42"
+                  decoding="async"
+                  data-nimg="1"
+                  class="absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-focus:opacity-100"
+                  src="https://clerk.com/_next/static/media/supabase.869a45fb.svg"
+                  style="color: transparent"
+                />
+              </div>
+              <div
+                class="mt-2 text-sm font-medium text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100 group-hover:delay-75 group-focus:opacity-100 group-focus:delay-75 no-hover:opacity-100"
+              >
+                Media
+              </div>
+            </div>
+          </app-dots-hover-block>
+        </app-dots-hover-group>
+      </div>
+    </div>
+  </div>
+
   <div class="h-96"></div>
 </div>
